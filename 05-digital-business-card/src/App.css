@@ -15,11 +15,14 @@
   --first-color-llight: hsl();
   --black-color: hsl(231, 12%, 12%, 1);
   --text-color: hsl(0, 0%, 100%);
+  --footerwhite-color: hsla(255, 5%, 84%, 1);
+  --whitetext-color: hsla(234, 22%, 37%, 1);
   --body-color: hsl();
   --emailbox-color: hsla(217, 19%, 27%, 1);
   --backgroundemailbox-color: hsla(0, 0%, 100%, 1);
   --linkedinbox-color: hsla(0, 0%, 100%, 1);
   --backgroundlinkedinbox-color: hsla(212, 72%, 60%, 1);
+  --white-color: hsla(0, 0%, 96%, 1);
 
   /* === FONTS AND TYPOGRAHY : .5rem =8px | 1rem = 16px === */
 
@@ -57,9 +60,9 @@ h3 .card__name {
 
 .card__body {
   position: relative;
-  background-color: var(--black-color);
+  background-color: var(--white-color);
   padding: 1.23rem 2rem 3rem;
-  color: var(--text-color);
+  color: var(--whitetext-color);
 }
 
 .card__body__content h3 {
@@ -91,17 +94,17 @@ img .card__header__img {
 .card__socials .card__social__email {
   background-color: var(--backgroundemailbox-color);
   color: var(--emailbox-color);
-  padding: 0.4rem 1rem; /* === 107px 35px === */
+  padding: 0.4rem 6rem; /* === 107px 35px === */
   margin: 2px;
   border-radius: 0.4rem;
 }
-.card__socials .card__social__linkedin {
+/* .card__socials .card__social__linkedin {
   background-color: var(--backgroundlinkedinbox-color);
   color: var(--linkedinbox-color);
   padding: 0.4rem 1rem;
   margin: 1px;
   border-radius: 0.4rem;
-}
+} */
 
 /* === FOOTER === */
 .card__footer {
@@ -110,7 +113,8 @@ img .card__header__img {
 
 .card__socials__footer {
   border-radius: 0 0 1rem 1rem;
-  background-color: hsla(231, 7%, 9%, 1);
+  /* background-color: hsla(231, 7%, 9%, 1); */
+  background-color: var(--footerwhite-color);
   width: 100%;
 }
 
@@ -160,4 +164,3 @@ ul > span {
     background-color: hsla(227, 11%, 15%, 1);
   }
 }
-

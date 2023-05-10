@@ -5,7 +5,7 @@ import igImage from "./assets/instagram-icon.png"
 import githubImage from "./assets/github-icon.png"
 import facebookImage from "./assets/facebook-icon.png"
 import mailImage from "./assets/mail-icon.png"
-import linkedinImage from "./assets/linkedin-icon.png"
+import linkedinImage from "./assets/linkedin-icon-two.png"
 
 function App() {
   return (
@@ -63,16 +63,15 @@ function App() {
         <div className="card__profession">Frontend Developer</div>
         <div className="card__website">laurasmith.website</div>
         <div className="card__socials">
-        <span className="card__social__email">
-          <img src={mailImage} alt="email" className="" /> Email
-        </span>
-        
+          <span className="card__social__email">
+            <img src={mailImage} alt="email" className="" /> Email
+          </span>
         </div>
         <div className="card__body__content">
           <h3 className="card__body__about">About</h3>
           <p>I am a frontend developer with a particular interest in making things simple and automating daily tasks. I try to keep up with security and best practices, and am always looking for new things to learn.</p>
-        <h3 className="card__body__interests"> Interests</h3>
-        <p>Food expert. Music scholar. Reader. Internet fanatic. Bacon buff. Entrepreneur. Travel geek. Pop culture ninja. Coffee fanatic..</p>
+          <h3 className="card__body__interests"> Interests</h3>
+          <p>Food expert. Music scholar. Reader. Internet fanatic. Bacon buff. Entrepreneur. Travel geek. Pop culture ninja. Coffee fanatic..</p>
         </div>
       </div>
       <div className="card__socials__footer">
@@ -88,8 +87,8 @@ function App() {
             <img src={githubImage} alt="github" className="" />
           </span>
           <span className="card__social__linkedin">
-          <img src={linkedinImage} alt="linkedin" className="" /> 
-        </span>
+            <img src={linkedinImage} alt="linkedin" className="" />
+          </span>
           <span className="card__footer__github">
             <img src={facebookImage} alt="facebook" className="" />
           </span>
