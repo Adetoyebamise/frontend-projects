@@ -9,45 +9,92 @@ import linkedinImage from "./assets/linkedin-icon.png"
 
 function App() {
   return (
-    <div class="container">
-      <div class="card__body">
-        <div class="card__header">
+    // <div className="container">
+    //   <div className="card__body">
+    //     <div className="card__header">
+    //       {" "}
+    //       <img src={cardImage} alt="card header" className="card__header__img" />
+    //       {""}
+    //     </div>
+    //     <h3 className="card__name"> Laura Smith</h3>
+    //     <div className="card__profession">Frontend Developer</div>
+    //     <div className="card__website">laurasmith.website</div>
+    //     <div className="card__socials">
+    //     <span className="card__social__email">
+    //       <img src={mailImage} alt="email" className="" /> Email
+    //     </span>
+    //     <span className="card__social__linkedin">
+    //       <img src={linkedinImage} alt="linkedin" className="" /> linkedin
+    //     </span>
+    //     </div>
+    //     <div className="card__body__content">
+    //       <h3 className="card__body__about">About</h3>
+    //       <p>I am a frontend developer with a particular interest in making things simple and automating daily tasks. I try to keep up with security and best practices, and am always looking for new things to learn.</p>
+    //     <h3 className="card__body__interests"> Interests</h3>
+    //     <p>Food expert. Music scholar. Reader. Internet fanatic. Bacon buff. Entrepreneur. Travel geek. Pop culture ninja. Coffee fanatic..</p>
+    //     </div>
+    //   </div>
+    //   <div className="card__socials__footer">
+    //     <ul className="card__footer">
+    //       <span className="card__footer__twitter">
+    //         {" "}
+    //         <img src={twitterImage} alt="twitter" className="" />
+    //       </span>
+    //       <span className="card__footer__facebook">
+    //         <img src={igImage} alt="instagram" className="" />
+    //       </span>
+    //       <span className="card__footer__ig">
+    //         <img src={githubImage} alt="github" className="" />
+    //       </span>
+    //       <span className="card__footer__github">
+    //         <img src={facebookImage} alt="facebook" className="" />
+    //       </span>
+    //     </ul>
+    //   </div>
+    // </div>
+    <div className="container">
+      <div className="card__body">
+        <div className="card__header">
           {" "}
-          <img src={cardImage} alt="card header" class="card__header__img" />
+          <img src={cardImage} alt="card header" className="card__header__img" />
           {""}
         </div>
-        <h3 class="card__name"> Laura Smith</h3>
-        <span class="card__profession">Frontend Developer</span>
-        <span class="card__website">laurasmith.website</span>
-        <span class="card__social__email">
-          <img src={mailImage} alt="email" class="" />
+        <h3 className="card__name"> Laura Smith</h3>
+        <div className="card__profession">Frontend Developer</div>
+        <div className="card__website">laurasmith.website</div>
+        <div className="card__socials">
+        <span className="card__social__email">
+          <img src={mailImage} alt="email" className="" /> Email
         </span>
-        <span class="card__social__linkedin">
-          
-          <img src={linkedinImage} alt="linkedin" class="" />
-        </span>
-        <div class="card__body">
-          <h3 class="card__body__about">About</h3>
-          <p>I am a frontend developer with a particular interest in making things simple and automating daily tasks. I try to keep up with security and best practices, and am always looking for new things to learn.</p>
+        
         </div>
-        <h3 class="card__body__interests"> Interests</h3>
+        <div className="card__body__content">
+          <h3 className="card__body__about">About</h3>
+          <p>I am a frontend developer with a particular interest in making things simple and automating daily tasks. I try to keep up with security and best practices, and am always looking for new things to learn.</p>
+        <h3 className="card__body__interests"> Interests</h3>
         <p>Food expert. Music scholar. Reader. Internet fanatic. Bacon buff. Entrepreneur. Travel geek. Pop culture ninja. Coffee fanatic..</p>
+        </div>
       </div>
-      <ul class="card__footer">
-        <span class="card__footer__twitter">
-          {" "}
-          <img src={twitterImage} alt="twitter" class="" />
+      <div className="card__socials__footer">
+        <ul className="card__footer">
+          <span className="card__footer__twitter">
+            {" "}
+            <img src={twitterImage} alt="twitter" className="" />
+          </span>
+          <span className="card__footer__facebook">
+            <img src={igImage} alt="instagram" className="" />
+          </span>
+          <span className="card__footer__ig">
+            <img src={githubImage} alt="github" className="" />
+          </span>
+          <span className="card__social__linkedin">
+          <img src={linkedinImage} alt="linkedin" className="" /> 
         </span>
-        <span class="card__footer__facebook">
-          <img src={igImage} alt="instagram" class="" />
-        </span>
-        <span class="card__footer__ig">
-          <img src={githubImage} alt="github" class="" />
-        </span>
-        <span class="card__footer__github">
-          <img src={facebookImage} alt="facebook" class="" />
-        </span>
-      </ul>
+          <span className="card__footer__github">
+            <img src={facebookImage} alt="facebook" className="" />
+          </span>
+        </ul>
+      </div>
     </div>
   )
 }

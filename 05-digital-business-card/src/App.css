@@ -1,6 +1,163 @@
-/* ===BASE=== */
+/* === GOOGLE FONTS === */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+
+/* === BASE === */
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
+
+/* === VARIABLE CSS === */
+:root {
+  /* === COLORS: COLOR MODE HSL(hue, saturation, lightness) === */
+  --first-color: hsl();
+  --first-color-llight: hsl();
+  --black-color: hsl(231, 12%, 12%, 1);
+  --text-color: hsl(0, 0%, 100%);
+  --body-color: hsl();
+  --emailbox-color: hsla(217, 19%, 27%, 1);
+  --backgroundemailbox-color: hsla(0, 0%, 100%, 1);
+  --linkedinbox-color: hsla(0, 0%, 100%, 1);
+  --backgroundlinkedinbox-color: hsla(212, 72%, 60%, 1);
+
+  /* === FONTS AND TYPOGRAHY : .5rem =8px | 1rem = 16px === */
+
+  --body-font: "Poppins", sans-seerif;
+  --h3-font-size: 1.125rem;
+  --smaller-font-size: 0.75rem;
+}
+
+/* === CONTAINER === */
+.container {
+  height: 100vh;
+  margin-inline: 1.5rem;
+  display: grid;
+  place-items: center;
+}
+
+img .card__header__img {
+  max-width: 100%;
+  height: auto;
+}
+h3 .card__name {
+  /* position: relative; */
+  text-align: justify;
+}
+.card__body h3 {
+  text-align: center;
+}
+.card__body .card__profession {
+  text-align: center;
+  text-decoration: hsla(25, 79%, 78%, 1);
+}
+.card__body .card__website {
+  text-align: center;
+}
+
+.card__body {
+  position: relative;
+  background-color: var(--black-color);
+  padding: 1.23rem 2rem 3rem;
+  color: var(--text-color);
+}
+
+.card__body__content h3 {
+  text-align: left;
+  padding: 0.8rem 0rem;
+  font-size: smaller;
+}
+
+.card__body__content p {
+  text-align: left;
+  font-size: var(--smaller-font-size);
+}
+
+img .card__header__img {
+  max-width: 100%;
+}
+
+.card__website:hover {
+  text-decoration: underline;
+}
+
+/* === SOCIAL MEDIA CARDS === */
+.card__socials {
+  padding: 0.8rem 1rem 0.1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.card__socials .card__social__email {
+  background-color: var(--backgroundemailbox-color);
+  color: var(--emailbox-color);
+  padding: 0.4rem 1rem; /* === 107px 35px === */
+  margin: 2px;
+  border-radius: 0.4rem;
+}
+.card__socials .card__social__linkedin {
+  background-color: var(--backgroundlinkedinbox-color);
+  color: var(--linkedinbox-color);
+  padding: 0.4rem 1rem;
+  margin: 1px;
+  border-radius: 0.4rem;
+}
+
+/* === FOOTER === */
+.card__footer {
+  padding: 1.7rem 1rem 1rem 1rem;
+}
+
+.card__socials__footer {
+  border-radius: 0 0 1rem 1rem;
+  background-color: hsla(231, 7%, 9%, 1);
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+ul > span {
+  flex: 0.14;
+  text-align: center;
+}
+/* === MEDIA QUERIES */
+@media screen and (min-width: 768px) {
+  .card__body {
+    width: 380px;
+  }
+  .card__website:hover {
+    text-decoration: underline;
+  }
+  /* === FOOTER === */
+  .card__socials__footer {
+    width: 380px;
+    border-radius: 0 0 1rem 1rem;
+  }
+  body {
+    background-color: hsla(227, 11%, 15%, 1);
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 413px) {
+  .card__body {
+    width: 380px;
+  }
+  .card__website:hover {
+    text-decoration: underline;
+  }
+  /* === FOOTER === */
+  .card__socials__footer {
+    width: 380px;
+    border-radius: 0 0 1rem 1rem;
+  }
+  body {
+    background-color: hsla(227, 11%, 15%, 1);
+  }
+}
+
