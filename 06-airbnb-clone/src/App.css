@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+/* === BASE === */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
   display: flex;
-  flex-direction: column;
+  padding: 10px 2px;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.App-link {
-  color: #61dafb;
+.airbnb__hero {
+  display: flex;
+  padding: 20px 2px;
+  align-items: center;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
+p {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+/* === CARD === */
+.card__info {
+  display: grid;
+  margin: 2rem 14rem;
+  grid-template-columns: 1fr 1fr 1fr; /* repeat(3, 1fr); */
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__info__bride img {
+  width: 100%;
+  height: 76.5%;
+  object-fit: initial;
+  padding-right: 1rem;
+}
+.card__info__hike img {
+  width: 100%;
+  object-fit: initial;
+  padding-right: 1rem;
+}
+
+/* 
+.card__info {
+    float: left;
+    width:  100px;
+    height: 100px;
+    background-size: cover;
+    background-color: brown;
+} */
