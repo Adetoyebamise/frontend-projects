@@ -39,24 +39,3 @@ p {
   justify-content: center;
   align-items: center;
 }
-
-.card__info__bride img {
-  width: 100%;
-  height: 76.5%;
-  object-fit: initial;
-  padding-right: 1rem;
-}
-.card__info__hike img {
-  width: 100%;
-  object-fit: initial;
-  padding-right: 1rem;
-}
-
-/* 
-.card__info {
-    float: left;
-    width:  100px;
-    height: 100px;
-    background-size: cover;
-    background-color: brown;
-} */

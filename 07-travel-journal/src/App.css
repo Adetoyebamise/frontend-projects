@@ -1,38 +1,36 @@
-.App {
-  text-align: center;
+/* === BASE === */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.travel__japan::before {
+  content: url("https://source.unsplash.com/WLxQvbMyfas");
+}
+.travel__australia::before {
+  content: url("https://source.unsplash.com/JmuyB_LibRo");
+}
+.travel__oslo::before {
+  content: url("https://source.unsplash.com/3PeSjpLVtLg");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.travel__japan img {
+  justify-content: start;
+  width: 100%;
+  height: auto;
+}
+.travel__australia img {
+  justify-content: start;
+  width: 100%;
+  height: auto;
+}
+.travel__oslo img {
+  justify-content: start;
+  width: 100%;
+  height: auto;
+}
+travel__journey__app {
+  justify-content: end;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
