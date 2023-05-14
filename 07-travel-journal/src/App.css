@@ -4,7 +4,7 @@
   padding: 0;
   margin: 0;
 }
-.travel__japan::before {
+/* .travel__japan::before {
   content: url("https://source.unsplash.com/WLxQvbMyfas");
 }
 .travel__australia::before {
@@ -12,9 +12,81 @@
 }
 .travel__oslo::before {
   content: url("https://source.unsplash.com/3PeSjpLVtLg");
+} */
+
+.travel__journey__app {
+  border: 1px solid green;
+  width: 550px;
+  margin: 10px auto;
 }
 
+/* === Navbar === */
+.navbar__container {
+  /* padding: 1px 10px; */
+  align-items: center;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  background-color: hsla(0, 89%, 66%, 1);
+}
+.center__placing__container {
+  display: inline-block;
+  display: flex;
+  border: 1px solid green;
+}
+.nav__image {
+  height: 24px;
+  margin-right: 9px;
+  filter: invert(1);
+}
 
+.nav__paragraph {
+  margin-top: 2px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+/* === place style css === */
+.place__container {
+  width: 471px;
+  height: 168px;
+  border: 1px solid red;
+  border-radius: 9px;
+  margin: 30px auto;
+  display: flex;
+}
+.left__image {
+  width: 125px;
+  height: 168px;
+}
+.left__container {
+}
+.right__container {
+  border: 1px solid green;
+  margin: 20px;
+}
+.travel__location {
+  display: flex;
+}
+.travel__location__icon img {
+  height: 16px;
+}
+
+.travel__location__icon span {
+  font-size: 14px;
+}
+/* === destination name for mane--hi */
+.destination__name { 
+
+}
+.city__name {
+  font-size: 13px;
+  color: hsla(250, 18%, 19%, 1);
+  margin-left: 3px;
+  margin-bottom: 2px;
+
+}
+/* === end place style ccss */
 .travel__japan img {
   justify-content: start;
   width: 100%;
@@ -33,4 +105,3 @@
 travel__journey__app {
   justify-content: end;
 }
-
