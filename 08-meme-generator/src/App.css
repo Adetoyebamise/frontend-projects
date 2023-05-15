@@ -1,38 +1,67 @@
-.App {
+/* === BASE === */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+ .header__section {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  width: 550px;
+  margin: auto;
+  color: white;
+  height: 65px;
+}
+
+.meme__header {
+  display: flex;
+  align-items: center;
+}
+
+.header__project {
+  display: flex;
+  justify-items: end;
+  margin: auto 0.2rem;
+  padding-left: 5rem;
+  font-size: 12px;
+}
+
+.header__title {
   text-align: center;
+  margin-right: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input__form__section {
+  width: 550px;
+  display: flex;
+  margin: auto;
+  padding: 1rem;
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input__form__section {
+  display: flex;
+  flex-direction: row;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.button__column__container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 550px;
+  margin: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.entire__form__section {
+  display: flex;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.image__section {
+  width: 550px;
+  margin: auto;
+  padding-left: 2rem;
+  padding-top: 2rem;
+} 
