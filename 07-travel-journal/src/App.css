@@ -15,7 +15,6 @@
 } */
 
 .travel__journey__app {
-  border: 1px solid green;
   width: 550px;
   margin: 10px auto;
 }
@@ -32,7 +31,6 @@
 .center__placing__container {
   display: inline-block;
   display: flex;
-  border: 1px solid green;
 }
 .nav__image {
   height: 24px;
@@ -50,19 +48,18 @@
 .place__container {
   width: 471px;
   height: 168px;
-  border: 1px solid red;
   border-radius: 9px;
   margin: 30px auto;
   display: flex;
+  background-color: rgb(242, 236, 236);
+  box-shadow: 1px 1px 10px 0px rgba(128, 128, 128, 0.466);
 }
 .left__image {
   width: 125px;
   height: 168px;
 }
-.left__container {
-}
+
 .right__container {
-  border: 1px solid green;
   margin: 20px;
 }
 .travel__location {
@@ -75,16 +72,27 @@
 .travel__location__icon span {
   font-size: 14px;
 }
-/* === destination name for mane--hi */
-.destination__name { 
-
+.destination__name {
+  font-size: 20px;
 }
 .city__name {
   font-size: 13px;
   color: hsla(250, 18%, 19%, 1);
   margin-left: 3px;
   margin-bottom: 2px;
+}
 
+.travel__location__maplink {
+  margin-left: 10px;
+  font-size: 14px;
+  color: gray;
+  margin-top: 3px;
+}
+
+.travel__destination__content p {
+  font-size: 10.24px;
+  color: rgb(53, 52, 52);
+  margin-right: 7px;
 }
 /* === end place style ccss */
 .travel__japan img {
@@ -92,6 +100,7 @@
   width: 100%;
   height: auto;
 }
+
 .travel__australia img {
   justify-content: start;
   width: 100%;
