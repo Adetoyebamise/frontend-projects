@@ -1,0 +1,8 @@
+.box__container{
+  width: 90px;
+  height: 90px;
+  border: 1px solid gray;
+  cursor: pointer;
+  border-radius: 9px;
+  margin: 3px;
+}
