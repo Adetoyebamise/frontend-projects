@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
-import reactLogo from "./assets/react.svg"
-import viteLogo from "/vite.svg"
+// import reactLogo from "./assets/react.svg"
+// import viteLogo from "/vite.svg"
 import "./App.css"
 import { nanoid } from "nanoid"
 import Dice from "./Dice"
@@ -11,6 +11,7 @@ function App() {
 
   useEffect(() => {
     const taptruthValue = dice.every(dice => dice.tapon)
+    console.log("taptruthValue", taptruthValue)
     if (taptruthValue) {
       setTenzies(true)
       console.log("you've won the game")
@@ -36,7 +37,6 @@ function App() {
   function generateNewDice() {
     setDice(oldDice => {
       oldDice.map(oleDice => {
-        console.log("oleDice" , oleDice)
         return oldDice.tapon ? oleDice : createDieObjectData()
       })
     })
@@ -44,8 +44,8 @@ function App() {
 
   function holdDiceValue(id) {
     setDice(previousDiceValue => {
-      previousDiceValue.map(previousDice => {
-        return (previousDice.id = id ? { ...previousDice, tapon: !previousDice.tapon } : dice)
+      previousDiceValue.map(dice => {
+        return (dice.id = id ? { ...dice, tapon: !dice.tapon } : dice)
       })
     })
   }
@@ -62,9 +62,9 @@ function App() {
       />
     )
   })
-console.log("showDice", showDice)
+  console.log("showDice", showDice)
 
-  const refreshPage = () => {
+  const refreshPage = async () => {
     window.location.reload
   }
   return (
