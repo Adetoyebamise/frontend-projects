@@ -1,0 +1,72 @@
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --header-height: 3rem;
+  --blue-color: #0b3aa0;
+}
+
+/* === HEADER && HOME SECTION */
+.home__section__img__container img {
+  max-width: 100%;
+  height: auto;
+}
+section .nav{
+  margin: auto 22rem;
+}
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__logo {
+  display: flex;
+  width: 1.5rem;
+}
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 1rem;
+  margin-left: 18rem;
+}
+
+.nav__link {
+  color: var(--blue-color);
+  margin: 0rem 2rem;
+}
+ul {
+  list-style-type: none;
+}
+
+.stack__text__header {
+  display: flex;
+  flex-direction: column;
+}
+.carousal img {
+  max-width: 100%;
+  height: auto;
+}
+.carousal {
+  position: absolute;
+}
+section .carousal__container{
+  /* position: relative;
+  width: 1.5rem; */
+  display: block;
+  margin: auto 22rem;
+  height: 10px;
+  /* grid-template-rows: repeat(auto-fit, minmax(10px, 1fr)); */
+   /* column-gap: 5rem;  */
+  /* justify-items: center; */
+  /* align-items: center;  */
+
+}
+
+.grid{
+  display: grid;
+}
