@@ -12,7 +12,7 @@ export default function CalenderHeader() {
     setMonthIndex(monthIndex + 1)
   }
   function handleReset(params) {
-    setMonthIndex(dayjs().month())
+    setMonthIndex(monthIndex === dayjs().month() ? monthIndex +Math.random(): dayjs().month())
   }
   return (
     <div className="px-4 py-2 border-gray-100 flex items-center">
