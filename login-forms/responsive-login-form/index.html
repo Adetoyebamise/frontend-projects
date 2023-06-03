@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Responosive Login Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="login__content">
+        <img src="./assets/img/bg-login.png" alt="logo" class="login__image" />
+
+        <form action="" class="login__form">
+          <div>
+            <h1 class="login__title"><span> Welcome </span> Back</h1>
+            <p class="login__desription">Welcome! Please login to continue.</p>
+          </div>
+          <div>
+            <div class="login__inputs">
+              <div>
+                <label class="login__email" for="">Email</label>
+                <input type="email" placeholder="Enter your email address" required class="login__input" />
+              </div>
+
+              <div>
+                <label class="login__email" for="">Password</label>
+              </div>
+              <div>
+                <input type="password" placeholder="Enter your Password" required class="login__password" />
+                <i class="ri-eye-off-line login__eye" id="login-eye"></i>
+              </div>
+            </div>
+
+            <div class="login__check">
+              <input type="checkbox" class="login__check-input" />
+              <label for="" class="login__check-label">Remember me</label>
+            </div>
+          </div>
+          <div>
+            <div class="login__buttons">
+              <button type="submit" class="login__button">Log In</button>
+              <button type=" submit" class="login__button login__button-ghost">Sign Up</button>
+            </div>
+            <a href="#" class="login__forgot-password"> Forgot Password? </a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
