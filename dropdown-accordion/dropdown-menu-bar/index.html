@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Dropdown Menu Bar</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav__data">
+          <a href="#" class="nav__logo">
+            <i class="ri-planet-line"> Company </i>
+          </a>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line nav__burger"></i>
+            <i class="ri-close-line nav__close"></i>
+          </div>
+        </div>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li><a href="#" class="nav__link">Home</a></li>
+
+            <li><a href="#" class="nav__link">Company</a></li>
+
+            <li class="dropdown__item">
+              <div class="nav__link">
+                Analytics
+                <i class="ri-arrow-up-s-line dropdown__arrow"></i>
+              </div>
+              <ul class="dropdown__menu">
+                
+              </ul>
+            </li>
+
+            <li><a href="#" class="nav__link">Products</a></li>
+
+            <li class="dropdown__item">
+              <div class="nav__link">
+                Users
+                <i class="ri-arrow-up-s-line dropdown__arrow"></i>
+              </div>
+            </li>
+
+            <li><a href="#" class="nav__link">Contacts</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
